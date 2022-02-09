@@ -3,11 +3,11 @@
     import logo from './logo.svg';
 </script>
 
-<header class="bg-stone-400 text-white fixed top-0 left-0 right-0">
+<header class="text-white fixed top-0 left-0 right-0 z-20 py-3">
 
 
 
-    <nav class="px-2 sm:px-4 py-2.50 uppercase ">
+    <nav class="px-10 py-2.50 uppercase ">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="/" class="flex">
                 <img src={logo} alt="Stonewall Group Logo" class="w-60 brightness-0 invert my-6" />
