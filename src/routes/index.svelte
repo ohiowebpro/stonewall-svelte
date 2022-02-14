@@ -1,5 +1,6 @@
 <script context="module" lang="ts">
     export const prerender = true;
+    import image1 from './../img/macbook-screen.png';
 </script>
 
 <svelte:head>
@@ -14,11 +15,28 @@
 
 </div>
 
-<div class="container mx-auto">
+<div class="container mx-auto px-6">
     <h1 class="text-center text-2xl py-20 mx-20 text-gray font-bold">We are a group of passionate, relentless, and connected people who use the power of creativity to solve our clients' problems.</h1>
 </div>
 
-<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="/">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+<div class="container mx-auto px-6">
+    <div class="grid grid-cols-12 gap-6 md:gap-12 mb-12">
+        <div class="col-span-full md:col-span-5">
+            <div class="bg-ltgray bg-gradient-to-t from-ltgraybtm grid justify-items-center items-center h-full relative">
+                <img src="{image1}" alt="a computer" class="opacity-60" />
+                <a href="test" class="font-bold text-4xl uppercase absolute top-0 bottom-0 left-0 right-0" ><span class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">Video</span></a>
+            </div>
+        </div>
+        <div class="col-span-full md:col-span-7">
+            <div class="bg-ltgray bg-gradient-to-t from-ltgraybtm grid justify-items-center items-center h-full relative">
+                <img src="{image1}" alt="a computer" class="opacity-60" />
+                <a href="test" class="font-bold text-4xl uppercase absolute top-0 bottom-0 left-0 right-0" ><span class="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">Video</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <h2>Header Level 2</h2>
 

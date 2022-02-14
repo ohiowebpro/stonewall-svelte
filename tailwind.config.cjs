@@ -7,6 +7,8 @@ module.exports = {
       primary: '#d9c7b9',
       secondary: '#577bae',
       gray: '#606162',
+      ltgray: '#dddbe0',
+      ltgraybtm: '#c0bdc2',
     },
     screens: {
       'sm': '640px',
