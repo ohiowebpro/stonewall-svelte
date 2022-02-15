@@ -5,6 +5,7 @@ module.exports = {
       white: '#ffffff',
       black: '#000000',
       primary: '#d9c7b9',
+      primarygrad: '#c9b9ad',
       secondary: '#577bae',
       gray: '#606162',
       ltgray: '#dddbe0',
