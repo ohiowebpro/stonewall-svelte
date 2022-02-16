@@ -1,14 +1,20 @@
 <script context="module" lang="ts">
+
     export const prerender = true;
     import image1 from './../img/macbook-screen.png';
     import image2 from './../img/samples.png';
 
+
+    import Carousel from './../components/Carousel.svelte'
     const images = [
         {path: '/src/img/samples.png', id: 'image1'},
         {path: '/src/img/samples.png', id: 'image2'},
         {path: '/src/img/samples.png', id: 'image3'},
         {path: '/src/img/samples.png', id: 'image4'},
-
+        {path: '/src/img/samples.png', id: 'image5'},
+        {path: '/src/img/samples.png', id: 'image6'},
+        {path: '/src/img/samples.png', id: 'image7'},
+        {path: '/src/img/samples.png', id: 'image8'},
     ]
 
 </script>
@@ -64,15 +70,19 @@
     </div>
 </div>
 
+
+<Carousel
+        images={images}
+        imageWidth={500}
+        imageSpacing={'30px'}
+/>
+
 <div class="bg-ltgray relative">
 
-    <div id="carousel-container" class="absolute right-0 h-full z-0">
-        <div id="carousel-images">
-            {#each images as image}
-                <img src="{image.path}" alt="{image.id}" id="{image.id}" />
-            {/each}
-        </div>
-    </div>
+
+
+
+
     <div class="container mx-auto relative z-10">
 
         <div class="w-5/12 py-28">
